@@ -132,6 +132,13 @@ def generate_sprint_status_chart(sprints, output_path):
     plt.legend(handles=[bar3, bar2, bar1], loc='upper right')  # Reversed order: Done, In Progress, To Do
     plt.xticks(rotation=45)
     plt.grid(True, axis='y', linestyle='--', alpha=0.3)
+    
+    # Add timestamp
+    timestamp = datetime.datetime.now().strftime("%B %d, %Y at %I:%M %p %Z")
+    
+    plt.figtext(0.99, 0.01, f"As of {timestamp}", ha='right', va='bottom', 
+                fontsize=8, style='italic', alpha=0.7)
+    
     plt.tight_layout()
     plt.savefig(output_path, bbox_inches='tight', dpi=150)
     plt.close()
