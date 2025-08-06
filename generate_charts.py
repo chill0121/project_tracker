@@ -15,14 +15,16 @@ def extract_sprint_tasks(md_text):
     sprints = []
 
     for section in sprint_sections[1:]:
-        title_match = re.search(r"Sprint (\d+)\s*–\s*(.*?)\s*\*\((.*?)\)\*", section, re.DOTALL)
+        # Updated regex to handle new format: "Sprint X: Title – Description *(dates)*"
+        title_match = re.search(r"Sprint (\d+)[:\s]*([^–]*)\s*–\s*(.*?)\s*\*\((.*?)\)\*", section, re.DOTALL)
 
         if not title_match:
             continue
 
         sprint_num = int(title_match.group(1))
-        sprint_title = title_match.group(2).strip()
-        date_range = title_match.group(3).strip()
+        sprint_title = title_match.group(2).strip() if title_match.group(2) else ""
+        sprint_description = title_match.group(3).strip()
+        date_range = title_match.group(4).strip()
 
         tasks = re.findall(r"[-*] \[([ x~])\] (.+)", section)
         parsed_tasks = []
@@ -39,6 +41,7 @@ def extract_sprint_tasks(md_text):
         sprints.append({
             "number": sprint_num,
             "title": sprint_title,
+            "description": sprint_description,
             "date_range": date_range,
             "tasks": parsed_tasks,
         })
