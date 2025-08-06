@@ -10,12 +10,12 @@
 
 | Sprint | Dates            | Focus                                              |
 |--------|------------------|----------------------------------------------------|
-| 1      | Aug 4 – Aug 17   | Onboarding, initial meetings, access requests, env setup |
-| 2      | Aug 18 – Aug 31  | Infra setup, data intake, data quality assessment |
-| 3      | Sep 1 – Sep 14   | Feature engineering, snapshot and churn logic, data QC |
-| 4      | Sep 15 – Sep 28  | Baseline churn model training + evaluation        |
-| 5      | Sep 29 – Oct 12  | Model & feature tuning, SHAP explainability, customer segmentation |
-| 6      | Oct 13 – Oct 26  | Final validation, pipeline automation, demo & handoff   |
+| 1      | Aug 4 – Aug 17   | **Foundation Setup** - Onboarding, initial meetings, access requests, env setup |
+| 2      | Aug 18 – Aug 31  | **Data Infrastructure** - Infra setup, data intake, data quality assessment |
+| 3      | Sep 1 – Sep 14   | **Feature Engineering** - Feature engineering, snapshot and churn logic, data QC |
+| 4      | Sep 15 – Sep 28  | **Model Development** - Baseline churn model training + evaluation        |
+| 5      | Sep 29 – Oct 12  | **Model Enhancement** - Model & feature tuning, SHAP explainability, customer segmentation |
+| 6      | Oct 13 – Oct 26  | **Production Deployment** - Final validation, pipeline automation, demo & handoff   |
 
 ---
 
@@ -51,7 +51,7 @@
 
 ---
 
-## 🔄 Sprint 1 – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
+## 🔄 Sprint 1: Foundation Setup – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
 
 ### Sprint Goals
 - [x] Initial meeting clarifying expectations and intial plan 
@@ -80,7 +80,7 @@
 
 ---
 
-## ⏳ Sprint 2 – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
+## ⏳ Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
 
 ### Sprint Goals
 - [ ] Define data sources and access method (AWS Glue + PySpark)
@@ -109,7 +109,7 @@
 
 ---
 
-## ⏳ Sprint 3 – Feature Engineering *(Sep 1-Sep 14)*
+## ⏳ Sprint 3: Feature Engineering – Feature Engineering *(Sep 1-Sep 14)*
 
 ### Sprint Goals
 - [ ] Develop FeatureEngineeringService()
@@ -139,7 +139,7 @@
 
 ---
 
-## ⏳ Sprint 4 – Model Development *(Sep 15–Sep 28)*
+## ⏳ Sprint 4: Model Development – Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
 - [ ] Set up model training and evaluation pipeline
@@ -164,7 +164,7 @@
 
 ---
 
-## ⏳ Sprint 5 – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
+## ⏳ Sprint 5: Model Enhancement – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
 
 ### Sprint Goals
 - [ ] Final model and feature tuning
@@ -190,7 +190,7 @@
 
 ---
 
-## ⏳ Sprint 6 – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
+## ⏳ Sprint 6: Production Deployment – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
 
 ### Sprint Goals
 - [ ] Final model validation
