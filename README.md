@@ -37,10 +37,10 @@ This README is designed to function as a quick overview landing page, while the 
 
 | Sprint | Deliverable | Demo Date |
 |--------|-------------|-----------|
-| 2 | Feature Store Schema & Data Pipeline | Aug 29 |
+| 2 | Feature Store Schema & Data Pipeline | Aug 28 |
 | 3 | Production Feature Store & Churn Definition | Sep 12 |
 | 4 | Baseline Churn Prediction Model | Sep 26 |
-| 5 | Model Explainability & Customer Segmentation | Oct 10 |
+| 5 | Model Explainability & Customer Segmentation | Oct 9 |
 | 6 | Production-Ready ML Pipeline | Oct 24 |
 
 ##  Contact & Communication
