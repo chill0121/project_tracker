@@ -23,7 +23,7 @@
 
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
-| 1      | 🔄 In Progress  | 60%       | Waiting on IT                  |
+| 1      | 🔄 In Progress  | 60%       | Access requested, waiting on IT|
 | 2      | ⏳ Not Started  | 0%        |                                |
 | 3      | ⏳ Not Started  | 0%        |                                |
 | 4      | ⏳ Not Started  | 0%        |                                |
@@ -61,7 +61,7 @@
     - [~] Database (LADYSIF & Redshift)
     - [ ] AWS Glue & Sagemaker
     - [x] DBeaver
-- [x] Create and deploy project tracker
+- [x] Create, deploy, and share project tracker
 - [x] Set up dev environment
     - [x] Terminal, Python + packages, VSCode, Jupyter
 - [ ] Set up repo, version control, and initial folder structure 
