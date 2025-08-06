@@ -43,10 +43,10 @@
 
 | Sprint | Deliverable | Stakeholder Value | Demo Date |
 |--------|-------------|-------------------|-----------|
-| 2 | Feature Store Schema & Data Pipeline Architecture | Data architecture clarity | Aug 29 |
+| 2 | Feature Store Schema & Data Pipeline Architecture | Data architecture clarity | Aug 28 |
 | 3 | Production Feature Store & Churn Definition | Reusable ML infrastructure, standardized customer churn logic | Sep 12 |
 | 4 | Baseline Churn Prediction Model | First working churn predictions, performance benchmarks | Sep 26 |
-| 5 | Model Explainability & Customer Segmentation | Business-interpretable insights, targeted customer strategies | Oct 10 |
+| 5 | Model Explainability & Customer Segmentation | Business-interpretable insights, targeted customer strategies | Oct 9 |
 | 6 | Production-Ready ML Pipeline | Automated churn detection system, knowledge transfer complete | Oct 24 |
 
 ---
