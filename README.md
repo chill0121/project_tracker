@@ -21,9 +21,9 @@ This README is designed to function as a quick overview landing page, while the 
 ## How to Use This Repository
 
 ### For Stakeholders
-1. **Quick Status Check:** Review the chart above and status overview
+1. **Quick Status Check:** Review the chart above
 2. **Detailed Progress:** Click on [Project Tracker](project_tracker.md) for comprehensive sprint details
-3. **Milestone Tracking:** Check the Key Deliverables & Milestones section in the tracker
+3. **Milestone Tracking:** Check the Key Deliverables & Milestones section in the tracker or at the bottom of this page
 
 ### For Developers
 1. **Update Tasks:** Modify task status in [project_tracker.md](project_tracker.md) using:
