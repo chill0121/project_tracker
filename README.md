@@ -2,19 +2,19 @@
 
 This repository serves as a living document to monitor project progress, sprint status, and key deliverables. This readme is supposed to function as a quick overview, while the **[Project Tracker](project_tracker.md)** gives full project details.
 
-## Repository Contents
-
-- **[Project Tracker](project_tracker.md)** - Detailed sprint breakdown, tasks, and progress tracking
-- **[generate_charts.py](generate_charts.py)** - Python script to generate visual progress charts
-- **[assets/](assets/)** - Generated charts and visual assets
-
 ## Current Sprint Status
 
 <div align="center">
 <img src="https://github.com/chill0121/project_tracker/blob/main/assets/sprint_status_chart.png?raw=true" alt="Sprint Task Status" width="700">
 </div>
 
-*Chart automatically updates when tasks are completed*
+>*Chart automatically updates when tasks are completed*
+
+## Repository Contents
+
+- **[Project Tracker](project_tracker.md)** - Detailed sprint breakdown, tasks, and progress tracking
+- **[generate_charts.py](generate_charts.py)** - Python script to generate visual progress charts
+- **[assets/](assets/)** - Generated charts and visual assets
 
 ## How to Use This Repository
 
