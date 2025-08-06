@@ -14,7 +14,7 @@
 | 2      | Aug 18 – Aug 31  | Infra setup, data intake, data quality assessment |
 | 3      | Sep 1 – Sep 14   | Feature engineering, snapshot and churn logic, data QC |
 | 4      | Sep 15 – Sep 28  | Baseline churn model training + evaluation        |
-| 5      | Sep 29 – Oct 12  | Model & feature tuning, SHAP explainability, customer segmenation |
+| 5      | Sep 29 – Oct 12  | Model & feature tuning, SHAP explainability, customer segmentation |
 | 6      | Oct 13 – Oct 26  | Final validation, pipeline automation, demo & handoff   |
 
 ---
@@ -37,11 +37,11 @@
 ## Sprint 1 – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
 
 ### Sprint Goals
-- [x] Intitial meeting clarifying expectations and intial plan 
-- [...] Gather and request access to necessary systems and tools
-    - [...] Confluence (Keystone & Data Services)
-    - [...] Github
-    - [...] Database (LADYSIF & Redshift)
+- [x] Initial meeting clarifying expectations and intial plan 
+- [~] Gather and request access to necessary systems and tools
+    - [~] Confluence (Keystone & Data Services)
+    - [~] Github
+    - [~] Database (LADYSIF & Redshift)
     - [ ] AWS Glue & Sagemaker
     - [x] DBeaver
 - [ ] Set up dev environment
@@ -66,7 +66,7 @@
 
 ### Sprint Goals
 - [ ] Define data sources and access method (AWS Glue + PySpark)
-    - [ ] Setup master config and python class for Spark session and DB connections
+    - [ ] Develop master config and python class for Spark session and DB connections
 - [ ] Draft feature store schema
 - [ ] Define SQL query/joins for main data ingestion
     - [ ] Customer + Account Data
@@ -76,7 +76,7 @@
 - [ ] Develop a DataIngestionService() in PySpark  
     - [ ] Join/Ingest raw tables into feature store staging and perform quality checks
     - [ ] Implement point-in-time joins for first feature group  
-- [ ] Start planning for high-impact data to be used in churn definition.
+- [ ] Plan for high-impact data to be used in churn definition.
 
 ### Weekly Check-In *(Aug 20 & Aug 28)*
 - **Progress Summary:**  
@@ -95,14 +95,14 @@
 
 ### Sprint Goals
 - [ ] Develop FeatureEngineeringService()
-    - [ ] _get_elibile_customers() (minumum tenure, only data up until churn event, etc)
+    - [ ] _get_eligible_customers() (minumum tenure, only data up until churn event, etc)
     - [ ] Generate customer snapshots
     - [ ] Add time-window aggregations (e.g. 30/60/90 day summaries) 
 - [ ] Define & document input-output data contract (schema enforcement and partition strategy)
-    - [ ] Start Feature Store data dictionary documenatation (markdown >> Confluence)
+    - [ ] Start Feature Store data dictionary documentation (markdown >> Confluence)
 - [ ] Choose feature store snapshot frequency
 - [ ] Draft churn definition with input from stakeholders/domain experts
-- [ ] Develop generate_churn_label() function with lookahead window
+- [ ] Develop generate_churn_label() function using lookahead window
     - [ ] Create reference document on decision-making and functionality
 - [ ] Validate data output with sample customers 
 - [ ] Feature store creation (with historical backfill for initial setup)
@@ -124,7 +124,7 @@
 ## Sprint 4 – Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
-- [ ] Setup model training and evaluation pipeline
+- [ ] Set up model training and evaluation pipeline
     - [ ] Develop ModelTrainingService()
         - [ ] Automate hyperparameter selection
     - [ ] Develop ModelEvaluationService()
@@ -156,7 +156,7 @@
     - [ ] Store cluster IDs in feature store or model registry
     - [ ] Store SHAP values in feature store or model registry
     - [ ] Output timestamped-versioned global feature importances
-- [ ] Create model pipeline documentation with parameter definitions and explaination
+- [ ] Create model pipeline documentation, including parameter definitions and explanation
 - [ ] Create SHAP Feature Importance documentation
 
 ### Weekly Check-In *(Oct 3 & Oct 9)*
@@ -176,11 +176,11 @@
 
 ### Sprint Goals
 - [ ] Final model validation
-- [ ] Set pipeline component latencies and finish implementing pipeline automations
+- [ ] Define pipeline component latencies and complete pipeline automation setup
 - [ ] Revisit all documentation and final polish
 - [ ] Pipeline walkthrough/demo and knowledge transfer
 
-### Weekly Check-In *(Oct 3 & Oct 9)*
+### Weekly Check-In *(Oct 17 & Oct 24)*
 - **Progress Summary:**  
 - **Blockers / Risks Identified:**  
 - **Adjustments Made:**  
