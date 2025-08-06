@@ -24,7 +24,7 @@
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
 | 1      | ✅ Complete     | 100%       | -                              |
-| 2      | 🔄 In Progress  | 60%        | Blocked on Snowflake creds     |
+| 2      | 🔄 In Progress  | 60%        |                                |
 | 3      | ⏳ Not Started  | 0%         |                                |
 | 4      | ⏳ Not Started  | 0%         |                                |
 | 5      | ⏳ Not Started  | 0%         |                                |
