@@ -1,10 +1,10 @@
 # ML Feature Store & Customer Attrition Model - Project Tracker
 
-This repository serves as a living document to monitor project progress, sprint status, and key deliverables.
+This repository serves as a living document to monitor project progress, sprint status, and key deliverables. This readme is supposed to function as a quick overview, while the **[Project Tracker](project_tracker.md)** gives full project details.
 
 ## Repository Contents
 
-- **[Project Tracker](project_tracker.md)** - Detailed sprint breakdown, tasks, and progress tracking (click the link for details)
+- **[Project Tracker](project_tracker.md)** - Detailed sprint breakdown, tasks, and progress tracking
 - **[generate_charts.py](generate_charts.py)** - Python script to generate visual progress charts
 - **[assets/](assets/)** - Generated charts and visual assets
 
