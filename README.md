@@ -1,6 +1,8 @@
 # ML Feature Store & Customer Attrition Model - Project Tracker
 
-This repository serves as a living document to monitor project progress, sprint status, and key deliverables. This readme is supposed to function as a quick overview, while the **[Project Tracker](project_tracker.md)** gives full project details.
+This repository serves as a living document to monitor project progress, sprint status, and key deliverables. Tasks will be continuously updated and added to as needed throughout the project.
+
+This README is designed to function as a quick overview landing page, while the **[Project Tracker](project_tracker.md)** gives full project details.
 
 ## Current Sprint Status
 
