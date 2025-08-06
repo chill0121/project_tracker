@@ -190,3 +190,9 @@
 - **Work Pushed to Next Sprint:**  
 - **Key Learnings:**  
 - **Next Sprint Priorities:**  
+
+### Burndown Chart  
+![Burndown](https://github.com/chill0121/project_tracker/blob/main/assets/burndown_chart.png?raw=true)
+
+### Sprint Task Status  
+![Sprint Status](https://github.com/chill0121/project_tracker/blob/main/assets/sprint_status_chart.png?raw=true)
