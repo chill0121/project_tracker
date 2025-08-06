@@ -23,7 +23,7 @@
 
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
-| 1      | 🔄 In Progress  | 50%       | Waiting on IT                  |
+| 1      | 🔄 In Progress  | 60%       | Waiting on IT                  |
 | 2      | ⏳ Not Started  | 0%        |                                |
 | 3      | ⏳ Not Started  | 0%        |                                |
 | 4      | ⏳ Not Started  | 0%        |                                |
@@ -34,17 +34,17 @@
 
 ---
 
-## Sprint 1 – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
+## 🔄 Sprint 1 – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
 
 ### Sprint Goals
 - [x] Initial meeting clarifying expectations and intial plan 
-- [~] Gather and request access to necessary systems and tools
+- [~] Gather info and request access to necessary systems and tools
     - [~] Confluence (Keystone & Data Services)
     - [~] Github
     - [~] Database (LADYSIF & Redshift)
     - [ ] AWS Glue & Sagemaker
     - [x] DBeaver
-- [ ] Set up dev environment
+- [x] Set up dev environment
     - [x] Terminal, Python + packages, VSCode, Jupyter
 - [ ] Set up repo, version control, and initial folder structure 
 - [ ] Explore different feature store options (Manually created Redshift or Sagemaker)
@@ -62,7 +62,7 @@
 
 ---
 
-## Sprint 2 – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
+## ⏳ Sprint 2 – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
 
 ### Sprint Goals
 - [ ] Define data sources and access method (AWS Glue + PySpark)
@@ -91,7 +91,7 @@
 
 ---
 
-## Sprint 3 – Feature Engineering *(Sep 1-Sep 14)*
+## ⏳ Sprint 3 – Feature Engineering *(Sep 1-Sep 14)*
 
 ### Sprint Goals
 - [ ] Develop FeatureEngineeringService()
@@ -121,7 +121,7 @@
 
 ---
 
-## Sprint 4 – Model Development *(Sep 15–Sep 28)*
+## ⏳ Sprint 4 – Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
 - [ ] Set up model training and evaluation pipeline
@@ -146,7 +146,7 @@
 
 ---
 
-## Sprint 5 – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
+## ⏳ Sprint 5 – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
 
 ### Sprint Goals
 - [ ] Final model and feature tuning
@@ -172,7 +172,7 @@
 
 ---
 
-## Sprint 6 – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
+## ⏳ Sprint 6 – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
 
 ### Sprint Goals
 - [ ] Final model validation
