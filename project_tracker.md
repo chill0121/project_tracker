@@ -34,6 +34,23 @@
 
 ---
 
+## Sprint Task Status  
+![Sprint Status](https://github.com/chill0121/project_tracker/blob/main/assets/sprint_status_chart.png?raw=true)
+
+---
+
+## Key Deliverables & Milestones
+
+| Sprint | Deliverable | Stakeholder Value | Demo Date |
+|--------|-------------|-------------------|-----------|
+| 2 | Feature Store Schema & Data Pipeline Architecture | Data architecture clarity | Aug 29 |
+| 3 | Production Feature Store & Churn Definition | Reusable ML infrastructure, standardized customer churn logic | Sep 12 |
+| 4 | Baseline Churn Prediction Model | First working churn predictions, performance benchmarks | Sep 26 |
+| 5 | Model Explainability & Customer Segmentation | Business-interpretable insights, targeted customer strategies | Oct 10 |
+| 6 | Production-Ready ML Pipeline | Automated churn detection system, knowledge transfer complete | Oct 24 |
+
+---
+
 ## 🔄 Sprint 1 – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
 
 ### Sprint Goals
@@ -44,6 +61,7 @@
     - [~] Database (LADYSIF & Redshift)
     - [ ] AWS Glue & Sagemaker
     - [x] DBeaver
+- [x] Create and deploy project tracker
 - [x] Set up dev environment
     - [x] Terminal, Python + packages, VSCode, Jupyter
 - [ ] Set up repo, version control, and initial folder structure 
@@ -190,9 +208,3 @@
 - **Work Pushed to Next Sprint:**  
 - **Key Learnings:**  
 - **Next Sprint Priorities:**  
-
-### Burndown Chart  
-![Burndown](https://github.com/chill0121/project_tracker/blob/main/assets/burndown_chart.png?raw=true)
-
-### Sprint Task Status  
-![Sprint Status](https://github.com/chill0121/project_tracker/blob/main/assets/sprint_status_chart.png?raw=true)
