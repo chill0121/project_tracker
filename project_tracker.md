@@ -35,7 +35,7 @@
 ---
 
 ## Sprint Task Status  
-![Sprint Status](https://github.com/chill0121/project_tracker/blob/main/assets/sprint_status_chart.png?raw=true)
+<img src="https://github.com/chill0121/project_tracker/blob/main/assets/sprint_status_chart.png?raw=true" alt="Sprint Status" width="800" height="500">
 
 ---
 
