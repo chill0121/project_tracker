@@ -57,7 +57,7 @@
 - [x] Initial meeting clarifying expectations and intial plan 
 - [~] Gather info and request access to necessary systems and tools
     - [~] Confluence (Keystone & Data Services)
-    - [~] Github
+    - [x] Github
     - [~] Database (LADYSIF & Redshift)
     - [ ] AWS Glue & Sagemaker
     - [x] DBeaver
@@ -65,7 +65,7 @@
 - [x] Set up dev environment
     - [x] Terminal, Python + packages, VSCode, Jupyter
 - [ ] Set up repo, version control, and initial folder structure 
-- [ ] Explore different feature store options (Manually created Redshift or Sagemaker)
+- [~] Explore different feature store options (Manually created Redshift or Sagemaker)
 
 ### Weekly Check-In *(Aug 7 & Aug 15)*
 - **Progress Summary:**  
