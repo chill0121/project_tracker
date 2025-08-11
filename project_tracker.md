@@ -59,7 +59,7 @@
     - [~] Confluence (Keystone & Data Services)
     - [x] Github
     - [~] Database (LADYSIF & Redshift)
-    - [ ] AWS Glue & Sagemaker
+    - [~] AWS Glue & Sagemaker
     - [x] DBeaver
 - [x] Create, deploy, and share project tracker
 - [x] Set up dev environment
