@@ -83,14 +83,14 @@
 ## ⏳ Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
 
 ### Sprint Goals
-- [ ] Define data sources and access method (AWS Glue + PySpark)
+- [~] Define data sources and access method (AWS Glue + PySpark)
     - [ ] Develop master config and python class for Spark session and DB connections
-- [ ] Draft feature store schema
-- [ ] Define SQL query/joins for main data ingestion
-    - [ ] Customer + Account Data
-    - [ ] Transaction Data
+- [~] Define SQL query/joins for main data ingestion
+    - [~] Customer + Account Data
+    - [~] Transaction Data
     - [ ] Interaction Data
-    - [ ] Send final query/schema to Vineeta and team for table creation (feature store)
+    - [~] Draft feature store schema
+- [ ] Send final query/schema to Vineeta and team for review and table creation (feature store)
 - [ ] Develop a DataIngestionService() in PySpark  
     - [ ] Join/Ingest raw tables into feature store staging and perform quality checks
     - [ ] Implement point-in-time joins for first feature group  
