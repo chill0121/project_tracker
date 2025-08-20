@@ -23,7 +23,7 @@
 
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
-| 1      | 🔄 In Progress  | 60%       | Access requested, waiting on IT|
+| 1      | 🔄 In Progress  | 80%       | Meeting scheduled with Jake Jones|
 | 2      | ⏳ Not Started  | 0%        |                                |
 | 3      | ⏳ Not Started  | 0%        |                                |
 | 4      | ⏳ Not Started  | 0%        |                                |
@@ -80,7 +80,7 @@
 
 ---
 
-## ⏳ Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
+## 🔄 Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
 
 ### Sprint Goals
 - [~] Define data sources and access method (AWS Glue + PySpark)
