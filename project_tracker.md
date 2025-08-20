@@ -24,7 +24,7 @@
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
 | 1      | 🔄 In Progress  | 80%       | Meeting scheduled with Jake Jones|
-| 2      | ⏳ Not Started  | 0%        |                                |
+| 2      | 🔄 In Progress  | 15%       |                                |
 | 3      | ⏳ Not Started  | 0%        |                                |
 | 4      | ⏳ Not Started  | 0%        |                                |
 | 5      | ⏳ Not Started  | 0%        |                                |
