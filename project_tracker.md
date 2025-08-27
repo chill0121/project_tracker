@@ -94,11 +94,11 @@
 - [x] Plan for high-impact data to be used in churn definition
 - [x] Complete demographic/account feature engineering (advanced from Sprint 3)
 - [x] Meet with Jake Jones to align on system needs, pipeline endpoints, and timeline
-- [~] Begin transaction feature engineering development 
+- [x] Begin transaction feature engineering development 
     - [~] Add time-window aggregations (e.g. 30/60/90 day summaries)
 - [~] Draft feature store schema (~200 features Customer+Acct+Transaction)
     - [~] Generate customer snapshots
-- [ ] Validate data output with sample customers (100)
+- [~] Validate data output with sample customers (100)
 
 ### Weekly Check-In *(Aug 20 & Aug 28)*
 - **Progress Summary:** Completed customer/demographic data ingestion and advanced feature engineering. 80% complete on transaction data ingestion. Sprint 2/3 hybrid approach proving effective.
