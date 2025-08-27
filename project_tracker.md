@@ -23,8 +23,8 @@
 
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
-| 1      | 🔄 In Progress  | 80%       | Meeting scheduled with Jake Jones|
-| 2      | 🔄 In Progress  | 15%       |                                |
+| 1      | 🔄 In Progress  | 80%       | Awaiting Jake Jones AWS Setup  |
+| 2      | 🔄 In Progress  | 70%       |                                |
 | 3      | ⏳ Not Started  | 0%        |                                |
 | 4      | ⏳ Not Started  | 0%        |                                |
 | 5      | ⏳ Not Started  | 0%        |                                |
@@ -65,7 +65,7 @@
 - [x] Set up dev environment
     - [x] Terminal, Python + packages, VSCode, Jupyter
 - [~] Set up repo, version control, and initial folder structure 
-- [x] Explore different feature store options (Manually created Redshift or Sagemaker)
+- [x] Explore different feature store options (Manually created S3 or Sagemaker)
 
 ### Weekly Check-In *(Aug 7 & Aug 15)*
 - **Progress Summary:**  
@@ -86,15 +86,14 @@
 - [~] Define data sources and access method (AWS Glue + PySpark)
     - [ ] Develop master config and python class for Spark session and DB connections
 - [~] Define SQL query/joins for main data ingestion
-    - [~] Customer + Account Data
+    - [x] Customer + Account Data
     - [~] Transaction Data
     - [ ] Interaction Data
     - [~] Draft feature store schema
-- [ ] Send final query/schema to Vineeta and team for review and table creation (feature store)
 - [~] Develop a DataIngestionService() in PySpark  
-    - [ ] Join/Ingest raw tables into feature store staging and perform quality checks
-    - [ ] Implement point-in-time joins for first feature group  
-- [ ] Plan for high-impact data to be used in churn definition.
+    - [~] Join/Ingest raw tables into feature store staging and perform quality checks
+    - [~] Implement point-in-time joins for first feature group
+- [~] Plan for high-impact data to be used in churn definition.
 
 ### Weekly Check-In *(Aug 20 & Aug 28)*
 - **Progress Summary:**  
