@@ -23,9 +23,9 @@
 
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
-| 1      | 🔄 In Progress  | 80%       | Awaiting Jake Jones AWS Setup  |
-| 2      | 🔄 In Progress  | 70%       |                                |
-| 3      | ⏳ Not Started  | 0%        |                                |
+| 1      | ✅ Complete     | 95%       | AWS Setup pending with Jake Jones |
+| 2      | 🔄 In Progress  | 85%       | Hybrid Sprint 2/3 approach     |
+| 3      | 🔄 Started Early| 40%       | Feature engineering advanced    |
 | 4      | ⏳ Not Started  | 0%        |                                |
 | 5      | ⏳ Not Started  | 0%        |                                |
 | 6      | ⏳ Not Started  | 0%        |                                |
@@ -64,7 +64,7 @@
 - [x] Create, deploy, and share project tracker
 - [x] Set up dev environment
     - [x] Terminal, Python + packages, VSCode, Jupyter
-- [~] Set up repo, version control, and initial folder structure 
+- [x] Set up repo, version control, and initial folder structure 
 - [x] Explore different feature store options (Manually created S3 or Sagemaker)
 
 ### Weekly Check-In *(Aug 7 & Aug 15)*
@@ -84,63 +84,73 @@
 
 ### Sprint Goals
 - [~] Define data sources and access method (AWS Glue + PySpark)
-    - [ ] Develop master config and python class for Spark session and DB connections
-- [~] Define SQL query/joins for main data ingestion
+    
+- [x] Define SQL query/joins for main data ingestion
     - [x] Customer + Account Data
-    - [~] Transaction Data
+    - [~] Transaction Data (80% complete - debugging balance discrepancies)
     - [ ] Interaction Data
-    - [~] Draft feature store schema
-- [~] Develop a DataIngestionService() in PySpark  
-    - [~] Join/Ingest raw tables into feature store staging and perform quality checks
-    - [~] Implement point-in-time joins for first feature group
-- [~] Plan for high-impact data to be used in churn definition.
+    - [x] Join/Ingest raw tables into feature store staging and perform quality checks
+    - [x] Implement point-in-time joins for first feature group
+- [x] Plan for high-impact data to be used in churn definition
+- [x] Complete demographic/account feature engineering (advanced from Sprint 3)
+- [x] Meet with Jake Jones to align on system needs, pipeline endpoints, and timeline
+- [~] Begin transaction feature engineering development 
+    - [~] Add time-window aggregations (e.g. 30/60/90 day summaries)
+- [~] Draft feature store schema (~200 features Customer+Acct+Transaction)
+    - [~] Generate customer snapshots
+- [ ] Validate data output with sample customers (100)
 
 ### Weekly Check-In *(Aug 20 & Aug 28)*
-- **Progress Summary:**  
-- **Blockers / Risks Identified:**  
-- **Adjustments Made:**  
+- **Progress Summary:** Completed customer/demographic data ingestion and advanced feature engineering. 80% complete on transaction data ingestion. Sprint 2/3 hybrid approach proving effective.
+- **Blockers / Risks Identified:** Minor balance discrepancies in transaction data, AWS Glue setup coordination
+- **Adjustments Made:** Advanced feature engineering while data structure was fresh, reshuffled Sprint 2/3 tasks for better flow.
 
 ### End of Sprint Debrief
 - **Completed Work:**  
 - **Work Pushed to Next Sprint:**  
-- **Key Learnings:**  
-- **Next Sprint Priorities:**  
+- **Key Learnings:**  Early feature engineering while data structure was fresh proved highly effective
+- **Next Sprint Priorities:**  Focus on PySpark conversion and production pipeline development
 
 ---
 
-## ⏳ Sprint 3: Feature Engineering – Feature Engineering *(Sep 1-Sep 14)*
+## 🔄 Sprint 3: Feature Engineering & Pipeline Development *(Sep 1-Sep 14)*
 
 ### Sprint Goals
-- [ ] Develop FeatureEngineeringService()
-    - [ ] _get_eligible_customers() (minumum tenure, only data up until churn event, etc)
-    - [ ] Generate customer snapshots
-    - [ ] Add time-window aggregations (e.g. 30/60/90 day summaries) 
+- [x] Advanced feature engineering (completed early in Sprint 2)
+    - [x] Derive demographic and account features (156 features)
+    - [~] Add time-window aggregations
 - [ ] Define & document input-output data contract (schema enforcement and partition strategy)
     - [ ] Start Feature Store data dictionary documentation (markdown >> Confluence)
-- [ ] Choose feature store snapshot frequency
+- [ ] Convert SQL work to PySpark + AWS Glue for automated ETL
+    - [ ] Develop master config and python class for Spark session and DB connections
+    - [ ] Choose feature store snapshot frequency
+    - [ ] Implement initial historical backfill operation
+- [ ] Build automated data validation checks and logging with broader population (beyond 100-person samples)
 - [ ] Draft churn definition with input from stakeholders/domain experts
 - [ ] Develop generate_churn_label() function using lookahead window
+    - [ ] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
     - [ ] Create reference document on decision-making and functionality
-- [ ] Validate data output with sample customers 
-- [ ] Feature store creation (with historical backfill for initial setup)
+- [ ] Feature store creation in S3 (with historical backfill for initial setup)
 - [ ] Exploratory Data Analysis with data distribution and correlation focus
+
 
 ### Weekly Check-In *(Sep 5 & Sep 12)*
 - **Progress Summary:**  
 - **Blockers / Risks Identified:**  
-- **Adjustments Made:**  
+- **Adjustments Made:** Sprint 2/3 hybrid approach - feature engineering advanced early to maintain momentum
 
 ### End of Sprint Debrief
 - **Completed Work:**  
 - **Work Pushed to Next Sprint:**  
-- **Key Learnings:**  
-- **Next Sprint Priorities:**  
+- **Key Learnings:** 
+- **Next Sprint Priorities:** 
 
 ---
 
-## ⏳ Sprint 4: Model Development – Model Development *(Sep 15–Sep 28)*
+## ⏳ Sprint 4: Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
+- [ ] Address feature complexity and potential dimensionality reduction needs
 - [ ] Set up model training and evaluation pipeline
     - [ ] Develop ModelTrainingService()
         - [ ] Automate hyperparameter selection
