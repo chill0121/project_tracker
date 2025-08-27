@@ -37,17 +37,17 @@ This README is designed to function as a quick overview landing page, while the 
 
 | Sprint | Title | Deliverable | Demo Date |
 |--------|-------|-------------|-----------|
-| 2 | Data Infrastructure | Feature Store Schema & Data Pipeline | Aug 28 |
-| 3 | Feature Engineering | Production Feature Store & Churn Definition | Sep 12 |
-| 4 | Model Development | Baseline Churn Prediction Model | Sep 26 |
-| 5 | Model Enhancement | Model Explainability & Customer Segmentation | Oct 9 |
-| 6 | Production Deployment | Production-Ready ML Pipeline | Oct 24 |
+| 2 | Data Infrastructure | Feature Store Schema & Data Pipeline | Aug 27 |
+| 3 | Feature Engineering | Production Feature Store & Churn Definition | Sep 10 |
+| 4 | Model Development | Baseline Churn Prediction Model | Sep 24 |
+| 5 | Model Enhancement | Model Explainability & Customer Segmentation | Oct 8 |
+| 6 | Production Deployment | Production-Ready ML Pipeline | Oct 22 |
 
 ##  Contact & Communication
 
 - **Project Lead:** Cody Hill
-- **Weekly Status Updates:** Every Thursday or Friday
-- **Sprint Reviews:** End of each 2-week sprint
+- **Weekly Status Updates:** Every Wednesday
+- **Sprint Reviews:** Every other Wednesday
 
 ---
 
