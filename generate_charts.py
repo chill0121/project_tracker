@@ -15,8 +15,8 @@ def extract_sprint_tasks(md_text):
     sprints = []
 
     for section in sprint_sections[1:]:
-        # Updated regex to handle new format: "Sprint X: Title – Description *(dates)*"
-        title_match = re.search(r"Sprint (\d+)[:\s]*([^–]*)\s*–\s*(.*?)\s*\*\((.*?)\)\*", section, re.DOTALL)
+        # Updated regex to handle emojis and both en dash (–) and hyphen (-): "🔄 Sprint X: Title – Description *(dates)*"
+        title_match = re.search(r"Sprint (\d+)[:\s]*([^–\-]*)\s*[–\-]\s*(.*?)\s*\*\((.*?)\)\*", section, re.DOTALL)
 
         if not title_match:
             continue
