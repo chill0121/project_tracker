@@ -113,7 +113,7 @@
 
 ---
 
-## 🔄 Sprint 3: Feature Engineering & Pipeline Development *(Sep 1-Sep 14)*
+## 🔄 Sprint 3: ETL Infrastructure & Production Pipeline *(Sep 1-Sep 14)*
 
 ### Sprint Goals
 - [x] Advanced feature engineering (completed early in Sprint 2)
