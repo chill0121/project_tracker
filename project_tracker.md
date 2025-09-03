@@ -24,8 +24,8 @@
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
 | 1      | ✅ Complete     | 95%       | AWS Setup pending with Jake Jones |
-| 2      | 🔄 In Progress  | 85%       | Hybrid Sprint 2/3 approach     |
-| 3      | 🔄 Started Early| 40%       | Feature engineering advanced    |
+| 2      | ✅ Complete     | 95%       | Feature engineering and data processing complete, interaction data not included in feature set |
+| 3      | 🔄 In Progress  | 55%       | ETL infrastructure, churn logic, and data validation in progress |
 | 4      | ⏳ Not Started  | 0%        |                                |
 | 5      | ⏳ Not Started  | 0%        |                                |
 | 6      | ⏳ Not Started  | 0%        |                                |
@@ -87,7 +87,7 @@
     
 - [x] Define SQL query/joins for main data ingestion
     - [x] Customer + Account Data
-    - [~] Transaction Data (80% complete - debugging balance discrepancies)
+    - [x] Transaction Data
     - [ ] Interaction Data
     - [x] Join/Ingest raw tables into feature store staging and perform quality checks
     - [x] Implement point-in-time joins for first feature group
@@ -95,9 +95,9 @@
 - [x] Complete demographic/account feature engineering (advanced from Sprint 3)
 - [x] Meet with Jake Jones to align on system needs, pipeline endpoints, and timeline
 - [x] Begin transaction feature engineering development 
-    - [~] Add time-window aggregations (e.g. 30/60/90 day summaries)
-- [~] Draft feature store schema (~200 features Customer+Acct+Transaction)
-    - [~] Generate customer snapshots
+    - [x] Add time-window aggregations (e.g. 30/60/90 day summaries)
+- [x] Draft feature store schema (~200 features Customer+Acct+Transaction)
+    - [x] Generate customer snapshots
 - [~] Validate data output with sample customers (100)
 
 ### Weekly Check-In *(Aug 20 & Aug 28)*
@@ -106,10 +106,10 @@
 - **Adjustments Made:** Advanced feature engineering while data structure was fresh, reshuffled Sprint 2/3 tasks for better flow.
 
 ### End of Sprint Debrief
-- **Completed Work:**  
-- **Work Pushed to Next Sprint:**  
-- **Key Learnings:**  Early feature engineering while data structure was fresh proved highly effective
-- **Next Sprint Priorities:**  Focus on PySpark conversion and production pipeline development
+- **Completed Work:** Core feature engineering, SQL-based data processing, feature schema design
+- **Work Pushed to Next Sprint:**
+- **Key Learnings:** Early feature engineering while data structure was fresh was a better workflow.
+- **Next Sprint Priorities:** Focus on PySpark conversion and production pipeline development
 
 ---
 
@@ -118,25 +118,30 @@
 ### Sprint Goals
 - [x] Advanced feature engineering (completed early in Sprint 2)
     - [x] Derive demographic and account features (156 features)
-    - [~] Add time-window aggregations
-- [ ] Define & document input-output data contract (schema enforcement and partition strategy)
-    - [ ] Start Feature Store data dictionary documentation (markdown >> Confluence)
-- [ ] Convert SQL work to PySpark + AWS Glue for automated ETL
-    - [ ] Develop master config and python class for Spark session and DB connections
-    - [ ] Choose feature store snapshot frequency
-    - [ ] Implement initial historical backfill operation
-- [ ] Build automated data validation checks and logging with broader population (beyond 100-person samples)
-- [ ] Draft churn definition with input from stakeholders/domain experts
-- [ ] Develop generate_churn_label() function using lookahead window
+    - [x] Add time-window aggregations
+- [x] Define & document input-output data contract (schema enforcement and partition strategy)
+    - [~] Start Feature Store data dictionary documentation (markdown >> Confluence)
+- [~] Convert SQL work to PySpark + AWS Glue for automated ETL
+    - [x] Develop master config and python class for Spark session and DB connections
+    - [x] Choose feature store snapshot frequency
+- [x] Implement initial historical backfill operation
+- [~] Build automated data validation checks and logging with broader population (beyond 100-person samples)
+- [~] Draft churn definition with input from stakeholders/domain experts
+- [x] Develop generate_churn_label() function using lookahead window
     - [ ] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
-    - [ ] Create reference document on decision-making and functionality
-- [ ] Feature store creation in S3 (with historical backfill for initial setup)
+    - [~] Create reference documents on decision-making and functionality
+- [ ] Feature store creation in S3
+    - [ ] Execute historical backfill ETL for 3-month training dataset
+    - [ ] Configure automated ETL scheduling (EventBridge?)
 - [ ] Exploratory Data Analysis with data distribution and correlation focus
-
+- [ ] Validate churn criteria with business stakeholders (schedule meeting)
+- [ ] Complete comprehensive EDA with feature distributions and correlations
+- [ ] Test full population data processing (beyond sample validation)
+- [ ] Refine data quality scoring and drift detection 
 
 ### Weekly Check-In *(Sep 5 & Sep 12)*
-- **Progress Summary:**  
-- **Blockers / Risks Identified:**  
+- **Progress Summary:** AWS Glue ETL infrastructure bagan, feature store schema set, churn logic framework in progress
+- **Blockers / Risks Identified:** Churn criteria need stakeholder validation, EDA pending, S3 still not deployed for testing
 - **Adjustments Made:** Sprint 2/3 hybrid approach - feature engineering advanced early to maintain momentum
 
 ### End of Sprint Debrief
@@ -150,15 +155,25 @@
 ## ⏳ Sprint 4: Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
-- [ ] Address feature complexity and potential dimensionality reduction needs
-- [ ] Set up model training and evaluation pipeline
-    - [ ] Develop ModelTrainingService()
-        - [ ] Automate hyperparameter selection
-    - [ ] Develop ModelEvaluationService()
-    - [ ] Develop ModelInferenceService()
-- [ ] Compare model performance across parameter changes (feature windows, churn definitions, prediction horizon)
-- [ ] Define model metadata storage needs (versioning, parameters)
-- [ ] Store predictions in feature store or model registry table
+- [ ] Feature selection and dimensionality analysis
+    - [ ] Correlation analysis and multicollinearity detection
+    - [ ] Feature importance baseline using simple models
+    - [ ] Identify optimal feature subset for model training
+- [ ] Baseline churn prediction model development
+    - [ ] XGBoost model implementation with default parameters
+    - [ ] Logistic regression benchmark model
+    - [ ] Cross-validation framework (5-fold stratified?)
+    - [ ] Model evaluation metrics (precision, recall, F1, AUC-ROC)
+- [ ] Model training and evaluation pipeline
+    - [ ] Automated train/validation/test split with temporal and customer-level considerations
+    - [ ] Model performance comparison framework
+    - [ ] Prediction storage in feature store with model versioning
+- [ ] Initial hyperparameter optimization
+    - [ ] Grid search for key XGBoost parameters
+    - [ ] Learning curve analysis for optimal training data size
+- [ ] Model metadata and versioning system
+    - [ ] Track model parameters, performance metrics, and training data versions
+    - [ ] Integration with feature store versioning
 
 ### Weekly Check-In *(Sep 19 & Sep 26)*
 - **Progress Summary:**  
@@ -176,15 +191,32 @@
 ## ⏳ Sprint 5: Model Enhancement – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
 
 ### Sprint Goals
-- [ ] Final model and feature tuning
-- [ ] Develop feature importance and SHAPExplainabilityService()
-- [ ] Perform customer segmentation (UMAP/PCA + HDBSCAN)
-    - [ ] Automate or set parameter selection based on heuristics
-    - [ ] Store cluster IDs in feature store or model registry
-    - [ ] Store SHAP values in feature store or model registry
-    - [ ] Output timestamped-versioned global feature importances
-- [ ] Create model pipeline documentation, including parameter definitions and explanation
-- [ ] Create SHAP Feature Importance documentation
+- [ ] Advanced model optimization and tuning
+    - [ ] Bayesian hyperparameter optimization (Optuna or similar)
+    - [ ] Feature engineering iteration based on model insights
+    - [ ] Class imbalance handling (SMOTE, class weights, threshold tuning)
+    - [ ] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
+- [ ] SHAP explainability framework implementation
+    - [ ] Global feature importance analysis across all customers
+    - [ ] Individual customer prediction explanations
+    - [ ] Feature interaction discovery and visualization
+    - [ ] SHAP value storage in feature store with model lineage
+    - [ ] Business-friendly explanation templates
+- [ ] Customer segmentation analysis
+    - [ ] UMAP/PCA dimensionality reduction for behavioral features
+    - [ ] HDBSCAN clustering with automatic parameter selection
+    - [ ] Segment characterization and churn risk profiling
+    - [ ] Cluster assignment storage and versioning
+    - [ ] Business insights and segment-specific model performance
+- [ ] Model validation and business impact assessment
+    - [ ] Performance analysis across customer segments
+    - [ ] Cost-benefit analysis of churn intervention
+    - [ ] Model stability testing across different time periods
+    - [ ] A/B testing framework design for model deployment
+- [ ] Documentation and knowledge transfer preparation
+    - [ ] Model methodology documentation
+    - [ ] SHAP interpretation guide for business stakeholders
+    - [ ] Customer segmentation insights summary
 
 ### Weekly Check-In *(Oct 3 & Oct 9)*
 - **Progress Summary:**  
