@@ -83,8 +83,7 @@
 ## 🔄 Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
 
 ### Sprint Goals
-- [~] Define data sources and access method (AWS Glue + PySpark)
-    
+- [x] Define data sources and access method (AWS Glue + PySpark)
 - [x] Define SQL query/joins for main data ingestion
     - [x] Customer + Account Data
     - [x] Transaction Data
@@ -121,7 +120,7 @@
     - [x] Add time-window aggregations
 - [x] Define & document input-output data contract (schema enforcement and partition strategy)
     - [~] Start Feature Store data dictionary documentation (markdown >> Confluence)
-- [~] Convert SQL work to PySpark + AWS Glue for automated ETL
+- [x] Convert SQL work to PySpark + AWS Glue for automated ETL
     - [x] Develop master config and python class for Spark session and DB connections
     - [x] Choose feature store snapshot frequency
 - [x] Implement initial historical backfill operation
