@@ -25,7 +25,7 @@
 |--------|----------------|------------|--------------------------------|
 | 1      | ✅ Complete     | 95%       | AWS Setup pending with Jake Jones |
 | 2      | ✅ Complete     | 95%       | Feature engineering and data processing complete, interaction data not included in feature set |
-| 3      | 🔄 In Progress  | 55%       | ETL infrastructure, churn logic, and data validation in progress |
+| 3      | 🔄 In Progress  | 65%       | ETL infrastructure, churn logic, and data validation in progress |
 | 4      | ⏳ Not Started  | 0%        |                                |
 | 5      | ⏳ Not Started  | 0%        |                                |
 | 6      | ⏳ Not Started  | 0%        |                                |
@@ -55,7 +55,7 @@
 
 ### Sprint Goals
 - [x] Initial meeting clarifying expectations and intial plan 
-- [~] Gather info and request access to necessary systems and tools
+- [x] Gather info and request access to necessary systems and tools
     - [x] Confluence (Keystone & Data Services)
     - [x] Github
     - [x] Database (LADYSIF & Redshift)
@@ -97,7 +97,7 @@
     - [x] Add time-window aggregations (e.g. 30/60/90 day summaries)
 - [x] Draft feature store schema (~200 features Customer+Acct+Transaction)
     - [x] Generate customer snapshots
-- [~] Validate data output with sample customers (100)
+- [x] Validate data output with sample customers (100)
 
 ### Weekly Check-In *(Aug 20 & Aug 28)*
 - **Progress Summary:** Completed customer/demographic data ingestion and advanced feature engineering. 80% complete on transaction data ingestion. Sprint 2/3 hybrid approach proving effective.
@@ -129,13 +129,12 @@
 - [x] Develop generate_churn_label() function using lookahead window
     - [ ] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
     - [~] Create reference documents on decision-making and functionality
-- [ ] Feature store creation in S3
+- [~] Feature store creation in S3
     - [ ] Execute historical backfill ETL for 3-month training dataset
     - [ ] Configure automated ETL scheduling (EventBridge?)
 - [ ] Exploratory Data Analysis with data distribution and correlation focus
-- [ ] Validate churn criteria with business stakeholders (schedule meeting)
-- [ ] Complete comprehensive EDA with feature distributions and correlations
-- [ ] Test full population data processing (beyond sample validation)
+- [~] Validate churn criteria with business stakeholders (schedule meeting)
+- [~] Test full population data processing (beyond sample validation)
 - [ ] Refine data quality scoring and drift detection 
 
 ### Weekly Check-In *(Sep 5 & Sep 12)*
