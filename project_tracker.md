@@ -119,23 +119,23 @@
     - [x] Derive demographic and account features (156 features)
     - [x] Add time-window aggregations
 - [x] Define & document input-output data contract (schema enforcement and partition strategy)
-    - [~] Start Feature Store data dictionary documentation (markdown >> Confluence)
+    - [x] Start Feature Store data dictionary documentation (markdown >> Confluence)
 - [x] Convert SQL work to PySpark + AWS Glue for automated ETL
     - [x] Develop master config and python class for Spark session and DB connections
     - [x] Choose feature store snapshot frequency
 - [x] Implement initial historical backfill operation
-- [~] Build automated data validation checks and logging with broader population (beyond 100-person samples)
+- [x] Build automated data validation checks and logging with broader population (beyond 100-person samples)
 - [~] Draft churn definition with input from stakeholders/domain experts
 - [x] Develop generate_churn_label() function using lookahead window
-    - [ ] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
+    - [x] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
     - [~] Create reference documents on decision-making and functionality
 - [~] Feature store creation in S3
     - [ ] Execute historical backfill ETL for 3-month training dataset
     - [ ] Configure automated ETL scheduling (EventBridge?)
-- [ ] Exploratory Data Analysis with data distribution and correlation focus
+- [~] Exploratory Data Analysis with data distribution and correlation focus
 - [~] Validate churn criteria with business stakeholders (schedule meeting)
 - [~] Test full population data processing (beyond sample validation)
-- [ ] Refine data quality scoring and drift detection 
+- [~] Refine data quality scoring and drift detection 
 
 ### Weekly Check-In *(Sep 5 & Sep 12)*
 - **Progress Summary:** AWS Glue ETL infrastructure bagan, feature store schema set, churn logic framework in progress
@@ -153,7 +153,8 @@
 ## ⏳ Sprint 4: Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
-- [ ] Feature selection and dimensionality analysis
+- [~] Feature selection and dimensionality analysis
+    - [x] Create feature exclusion list
     - [ ] Correlation analysis and multicollinearity detection
     - [ ] Feature importance baseline using simple models
     - [ ] Identify optimal feature subset for model training
@@ -162,16 +163,16 @@
     - [ ] Logistic regression benchmark model
     - [ ] Cross-validation framework (5-fold stratified?)
     - [ ] Model evaluation metrics (precision, recall, F1, AUC-ROC)
-- [ ] Model training and evaluation pipeline
-    - [ ] Automated train/validation/test split with temporal and customer-level considerations
+- [~] Model training and evaluation pipeline
+    - [x] Automated train/validation/test split with temporal and customer-level considerations
     - [ ] Model performance comparison framework
     - [ ] Prediction storage in feature store with model versioning
 - [ ] Initial hyperparameter optimization
     - [ ] Grid search for key XGBoost parameters
     - [ ] Learning curve analysis for optimal training data size
-- [ ] Model metadata and versioning system
+- [~] Model metadata and versioning system
     - [ ] Track model parameters, performance metrics, and training data versions
-    - [ ] Integration with feature store versioning
+    - [~] Integration with feature store versioning
 
 ### Weekly Check-In *(Sep 19 & Sep 26)*
 - **Progress Summary:**  
