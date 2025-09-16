@@ -59,7 +59,7 @@
     - [x] Confluence (Keystone & Data Services)
     - [x] Github
     - [x] Database (LADYSIF & Redshift)
-    - [~] AWS Glue & Sagemaker
+    - [x] AWS Glue & Sagemaker
     - [x] DBeaver
 - [x] Create, deploy, and share project tracker
 - [x] Set up dev environment
@@ -128,10 +128,10 @@
 - [~] Draft churn definition with input from stakeholders/domain experts
 - [x] Develop generate_churn_label() function using lookahead window
     - [x] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
-    - [~] Create reference documents on decision-making and functionality
+    - [x] Create reference documents on decision-making and functionality
 - [~] Feature store creation in S3
-    - [ ] Execute historical backfill ETL for 3-month training dataset
-    - [ ] Configure automated ETL scheduling (EventBridge?)
+    - [~] Execute historical backfill ETL for 3-month training dataset
+    - [~] Configure automated ETL scheduling (EventBridge?)
 - [~] Exploratory Data Analysis with data distribution and correlation focus
 - [~] Validate churn criteria with business stakeholders (schedule meeting)
 - [~] Test full population data processing (beyond sample validation)
@@ -158,20 +158,20 @@
     - [ ] Correlation analysis and multicollinearity detection
     - [ ] Feature importance baseline using simple models
     - [ ] Identify optimal feature subset for model training
-- [ ] Baseline churn prediction model development
+- [~] Baseline churn prediction model development
     - [ ] XGBoost model implementation with default parameters
-    - [ ] Logistic regression benchmark model
-    - [ ] Cross-validation framework (5-fold stratified?)
-    - [ ] Model evaluation metrics (precision, recall, F1, AUC-ROC)
+    - [~] Logistic regression benchmark model
+    - [~] Cross-validation framework (5-fold stratified?)
+    - [~] Model evaluation metrics (precision, recall, F1, AUC-ROC)
 - [~] Model training and evaluation pipeline
     - [x] Automated train/validation/test split with temporal and customer-level considerations
-    - [ ] Model performance comparison framework
+    - [~] Model performance comparison framework
     - [ ] Prediction storage in feature store with model versioning
 - [ ] Initial hyperparameter optimization
     - [ ] Grid search for key XGBoost parameters
     - [ ] Learning curve analysis for optimal training data size
 - [~] Model metadata and versioning system
-    - [ ] Track model parameters, performance metrics, and training data versions
+    - [~] Track model parameters, performance metrics, and training data versions
     - [~] Integration with feature store versioning
 
 ### Weekly Check-In *(Sep 19 & Sep 26)*
