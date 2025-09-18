@@ -23,10 +23,10 @@
 
 | Sprint | Status         | % Complete | Notes                          |
 |--------|----------------|------------|--------------------------------|
-| 1      | ✅ Complete     | 95%       | AWS Setup pending with Jake Jones |
+| 1      | ✅ Complete     | 100%      | AWS Setup complete, all foundation objectives met |
 | 2      | ✅ Complete     | 95%       | Feature engineering and data processing complete, interaction data not included in feature set |
-| 3      | 🔄 In Progress  | 65%       | ETL infrastructure, churn logic, and data validation in progress |
-| 4      | ⏳ Not Started  | 0%        |                                |
+| 3      | ✅ Complete     | 90%       | ETL infrastructure and churn logic framework complete, minor items carried forward |
+| 4      | 🔄 In Progress  | 60%       | AWS infrastructure deployed, model framework complete, training pipeline underway |
 | 5      | ⏳ Not Started  | 0%        |                                |
 | 6      | ⏳ Not Started  | 0%        |                                |
 
@@ -51,7 +51,7 @@
 
 ---
 
-## 🔄 Sprint 1: Foundation Setup – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
+## ✅ Sprint 1: Foundation Setup – Onboarding, Access, and Setup *(Aug 4–Aug 17)*
 
 ### Sprint Goals
 - [x] Initial meeting clarifying expectations and intial plan 
@@ -80,7 +80,7 @@
 
 ---
 
-## 🔄 Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
+## ✅ Sprint 2: Data Infrastructure – Infra Setup, Data Intake, and Data Processing *(Aug 18–Aug 31)*
 
 ### Sprint Goals
 - [x] Define data sources and access method (AWS Glue + PySpark)
@@ -150,34 +150,46 @@
 
 ---
 
-## ⏳ Sprint 4: Model Development *(Sep 15–Sep 28)*
+## 🔄 Sprint 4: Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
-- [~] Feature selection and dimensionality analysis
-    - [x] Create feature exclusion list
-    - [ ] Correlation analysis and multicollinearity detection
-    - [ ] Feature importance baseline using simple models
-    - [ ] Identify optimal feature subset for model training
-- [~] Baseline churn prediction model development
-    - [ ] XGBoost model implementation with default parameters
-    - [~] Logistic regression benchmark model
-    - [~] Cross-validation framework (5-fold stratified?)
-    - [~] Model evaluation metrics (precision, recall, F1, AUC-ROC)
-- [~] Model training and evaluation pipeline
+- [x] AWS infrastructure deployment and CI/CD setup
+    - [x] Complete AWS permissions setup (S3, Glue, SageMaker)
+    - [x] Deploy ML platform to S3 with automated GitHub Actions CI/CD
+    - [x] Establish repo as single source of truth for platform control
+- [x] Model development framework implementation
+    - [x] Centralized feature selector (metadata/PII column removal)
     - [x] Automated train/validation/test split with temporal and customer-level considerations
-    - [~] Model performance comparison framework
-    - [ ] Prediction storage in feature store with model versioning
-- [ ] Initial hyperparameter optimization
-    - [ ] Grid search for key XGBoost parameters
-    - [ ] Learning curve analysis for optimal training data size
-- [~] Model metadata and versioning system
-    - [~] Track model parameters, performance metrics, and training data versions
-    - [~] Integration with feature store versioning
+    - [x] Customer eligibility filtering (tenure/activity thresholds, pre-churn records)
+    - [x] Model registry with save/load/persist functionality
+    - [x] SageMaker training and inference integration
+    - [x] Model evaluation framework with baseline comparisons
+- [~] Feature selection and dimensionality analysis
+    - [x] Create feature exclusion list and centralized selector
+    - [~] Correlation analysis and multicollinearity detection
+    - [~] Feature importance baseline using simple models
+    - [~] Identify optimal feature subset for model training
+- [~] Baseline churn prediction model development
+    - [x] Baseline models framework (rule-based, simple, logistic regression)
+    - [ ] XGBoost model implementation with default parameters
+    - [~] Cross-validation framework integration
+    - [x] Model evaluation metrics implementation (precision, recall, F1, AUC-ROC)
+- [~] Model training and evaluation pipeline
+    - [x] Automated data splitting with persistence for reproducibility (temporal and customer-level)
+    - [x] Model performance comparison framework structure
+    - [~] Prediction storage in feature store with model versioning
+- [~] Initial hyperparameter optimization
+    - [~] Automated hyperparameter tuning framework with feature selection
+    - [ ] Grid search implementation for key parameters
+    - [~] Learning curve analysis capabilities
+- [x] Model metadata and versioning system
+    - [x] Model registry functionality for tracking parameters and performance
+    - [~] Integration framework with feature store versioning
 
 ### Weekly Check-In *(Sep 19 & Sep 26)*
-- **Progress Summary:**  
-- **Blockers / Risks Identified:**  
-- **Adjustments Made:**  
+- **Progress Summary:** AWS infrastructure operational, ML platform deployed with CI/CD, comprehensive model framework complete including feature selection, data splitting, and model registry. End-to-end ETL testing underway.
+- **Blockers / Risks Identified:** SageMaker integration testing pending, stakeholder churn criteria validation required, historical backfill completion needed for full training.
+- **Adjustments Made:** Prioritized infrastructure deployment and model framework over initial model training to establish solid foundation.  
 
 ### End of Sprint Debrief
 - **Completed Work:**  
