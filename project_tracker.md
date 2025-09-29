@@ -125,15 +125,15 @@
     - [x] Choose feature store snapshot frequency
 - [x] Implement initial historical backfill operation
 - [x] Build automated data validation checks and logging with broader population (beyond 100-person samples)
-- [~] Draft churn definition with input from stakeholders/domain experts
+- [x] Draft churn definition with input from stakeholders/domain experts
 - [x] Develop generate_churn_label() function using lookahead window
     - [x] _get_eligible_customers() (minimum tenure, only data up until churn event, etc)
     - [x] Create reference documents on decision-making and functionality
-- [~] Feature store creation in S3
-    - [~] Execute historical backfill ETL for 3-month training dataset
+- [x] Feature store creation in S3
+    - [x] Execute historical backfill ETL for 3-month training dataset
     - [~] Configure automated ETL scheduling (EventBridge?)
 - [~] Exploratory Data Analysis with data distribution and correlation focus
-- [~] Validate churn criteria with business stakeholders (schedule meeting)
+- [x] Validate churn criteria with business stakeholders (schedule meeting)
 - [~] Test full population data processing (beyond sample validation)
 - [~] Refine data quality scoring and drift detection 
 
@@ -171,7 +171,7 @@
     - [~] Identify optimal feature subset for model training
 - [~] Baseline churn prediction model development
     - [x] Baseline models framework (rule-based, simple, logistic regression)
-    - [ ] XGBoost model implementation with default parameters
+    - [~] XGBoost model implementation with default parameters
     - [~] Cross-validation framework integration
     - [x] Model evaluation metrics implementation (precision, recall, F1, AUC-ROC)
 - [~] Model training and evaluation pipeline
@@ -180,7 +180,7 @@
     - [~] Prediction storage in feature store with model versioning
 - [~] Initial hyperparameter optimization
     - [~] Automated hyperparameter tuning framework with feature selection
-    - [ ] Grid search implementation for key parameters
+    - [~] Grid search implementation for key parameters
     - [~] Learning curve analysis capabilities
 - [x] Model metadata and versioning system
     - [x] Model registry functionality for tracking parameters and performance
