@@ -131,7 +131,7 @@
     - [x] Create reference documents on decision-making and functionality
 - [x] Feature store creation in S3
     - [x] Execute historical backfill ETL for 3-month training dataset
-    - [~] Configure automated ETL scheduling (EventBridge?)
+    - [x] Configure automated ETL scheduling (EventBridge?)
 - [~] Exploratory Data Analysis with data distribution and correlation focus
 - [x] Validate churn criteria with business stakeholders (schedule meeting)
 - [~] Test full population data processing (beyond sample validation)
