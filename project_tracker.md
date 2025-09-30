@@ -132,7 +132,7 @@
 - [x] Feature store creation in S3
     - [x] Execute historical backfill ETL for 3-month training dataset
     - [x] Configure automated ETL scheduling (EventBridge?)
-- [~] Exploratory Data Analysis with data distribution and correlation focus
+- [x] Exploratory Data Analysis with data distribution and correlation focus
 - [x] Validate churn criteria with business stakeholders (schedule meeting)
 - [~] Test full population data processing (beyond sample validation)
 - [~] Refine data quality scoring and drift detection 
