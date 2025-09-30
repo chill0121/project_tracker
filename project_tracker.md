@@ -202,10 +202,10 @@
 ## ⏳ Sprint 5: Model Enhancement – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
 
 ### Sprint Goals
-- [ ] Advanced model optimization and tuning
-    - [ ] Bayesian hyperparameter optimization (Optuna or similar)
+- [~] Advanced model optimization and tuning
+    - [~] Bayesian hyperparameter optimization (Optuna or similar)
     - [ ] Feature engineering iteration based on model insights
-    - [ ] Class imbalance handling (SMOTE, class weights, threshold tuning)
+    - [~] Class imbalance handling (SMOTE, class weights, threshold tuning)
     - [ ] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
 - [ ] SHAP explainability framework implementation
     - [ ] Global feature importance analysis across all customers
