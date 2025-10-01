@@ -134,8 +134,8 @@
     - [x] Configure automated ETL scheduling (EventBridge?)
 - [x] Exploratory Data Analysis with data distribution and correlation focus
 - [x] Validate churn criteria with business stakeholders (schedule meeting)
-- [~] Test full population data processing (beyond sample validation)
-- [~] Refine data quality scoring and drift detection 
+- [x] Test full population data processing (beyond sample validation)
+- [x] Refine data quality scoring and drift detection 
 
 ### Weekly Check-In *(Sep 5 & Sep 12)*
 - **Progress Summary:** AWS Glue ETL infrastructure bagan, feature store schema set, churn logic framework in progress
@@ -174,10 +174,10 @@
     - [~] XGBoost model implementation with default parameters
     - [~] Cross-validation framework integration
     - [x] Model evaluation metrics implementation (precision, recall, F1, AUC-ROC)
-- [~] Model training and evaluation pipeline
+- [x] Model training and evaluation pipeline
     - [x] Automated data splitting with persistence for reproducibility (temporal and customer-level)
     - [x] Model performance comparison framework structure
-    - [~] Prediction storage in feature store with model versioning
+    - [x] Prediction storage in feature store with model versioning
 - [~] Initial hyperparameter optimization
     - [~] Automated hyperparameter tuning framework with feature selection
     - [~] Grid search implementation for key parameters
