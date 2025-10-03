@@ -164,23 +164,23 @@
     - [x] Model registry with save/load/persist functionality
     - [x] SageMaker training and inference integration
     - [x] Model evaluation framework with baseline comparisons
-- [~] Feature selection and dimensionality analysis
+- [x] Feature selection and dimensionality analysis
     - [x] Create feature exclusion list and centralized selector
-    - [~] Correlation analysis and multicollinearity detection
-    - [~] Feature importance baseline using simple models
+    - [x] Correlation analysis and multicollinearity detection
+    - [x] Feature importance baseline using simple models
     - [~] Identify optimal feature subset for model training
-- [~] Baseline churn prediction model development
+- [x] Baseline churn prediction model development
     - [x] Baseline models framework (rule-based, simple, logistic regression)
-    - [~] XGBoost model implementation with default parameters
-    - [~] Cross-validation framework integration
+    - [x] XGBoost model implementation with default parameters
+    - [x] Cross-validation framework integration
     - [x] Model evaluation metrics implementation (precision, recall, F1, AUC-ROC)
 - [x] Model training and evaluation pipeline
     - [x] Automated data splitting with persistence for reproducibility (temporal and customer-level)
     - [x] Model performance comparison framework structure
     - [x] Prediction storage in feature store with model versioning
 - [~] Initial hyperparameter optimization
-    - [~] Automated hyperparameter tuning framework with feature selection
-    - [~] Grid search implementation for key parameters
+    - [x] Automated hyperparameter tuning framework with feature selection
+    - [x] Grid search implementation for key parameters
     - [~] Learning curve analysis capabilities
 - [x] Model metadata and versioning system
     - [x] Model registry functionality for tracking parameters and performance
@@ -204,8 +204,8 @@
 ### Sprint Goals
 - [~] Advanced model optimization and tuning
     - [~] Bayesian hyperparameter optimization (Optuna or similar)
-    - [ ] Feature engineering iteration based on model insights
-    - [~] Class imbalance handling (SMOTE, class weights, threshold tuning)
+    - [~] Feature engineering iteration based on model insights
+    - [x] Class imbalance handling (SMOTE, class weights, threshold tuning)
     - [ ] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
 - [ ] SHAP explainability framework implementation
     - [ ] Global feature importance analysis across all customers
