@@ -168,7 +168,7 @@
     - [x] Create feature exclusion list and centralized selector
     - [x] Correlation analysis and multicollinearity detection
     - [x] Feature importance baseline using simple models
-    - [~] Identify optimal feature subset for model training
+    - [x] Identify optimal feature subset for model training
 - [x] Baseline churn prediction model development
     - [x] Baseline models framework (rule-based, simple, logistic regression)
     - [x] XGBoost model implementation with default parameters
@@ -178,10 +178,10 @@
     - [x] Automated data splitting with persistence for reproducibility (temporal and customer-level)
     - [x] Model performance comparison framework structure
     - [x] Prediction storage in feature store with model versioning
-- [~] Initial hyperparameter optimization
+- [x] Initial hyperparameter optimization
     - [x] Automated hyperparameter tuning framework with feature selection
     - [x] Grid search implementation for key parameters
-    - [~] Learning curve analysis capabilities
+    - [x] Learning curve analysis capabilities
 - [x] Model metadata and versioning system
     - [x] Model registry functionality for tracking parameters and performance
     - [~] Integration framework with feature store versioning
@@ -203,17 +203,17 @@
 
 ### Sprint Goals
 - [~] Advanced model optimization and tuning
-    - [~] Bayesian hyperparameter optimization (Optuna or similar)
+    - [x] Bayesian hyperparameter optimization (Optuna or similar)
     - [~] Feature engineering iteration based on model insights
     - [x] Class imbalance handling (SMOTE, class weights, threshold tuning)
-    - [ ] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
-- [ ] SHAP explainability framework implementation
+    - [~] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
+- [~] SHAP explainability framework implementation
     - [ ] Global feature importance analysis across all customers
     - [ ] Individual customer prediction explanations
     - [ ] Feature interaction discovery and visualization
-    - [ ] SHAP value storage in feature store with model lineage
+    - [~] SHAP value storage in feature store with model lineage
     - [ ] Business-friendly explanation templates
-- [ ] Customer segmentation analysis
+- [~] Customer segmentation analysis
     - [ ] UMAP/PCA dimensionality reduction for behavioral features
     - [ ] HDBSCAN clustering with automatic parameter selection
     - [ ] Segment characterization and churn risk profiling
@@ -225,7 +225,7 @@
     - [ ] Model stability testing across different time periods
     - [ ] A/B testing framework design for model deployment
 - [ ] Documentation and knowledge transfer preparation
-    - [ ] Model methodology documentation
+    - [~] Model methodology documentation
     - [ ] SHAP interpretation guide for business stakeholders
     - [ ] Customer segmentation insights summary
 
