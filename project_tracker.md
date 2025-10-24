@@ -25,10 +25,10 @@
 |--------|----------------|------------|--------------------------------|
 | 1      | ✅ Complete     | 100%      | AWS Setup complete, all foundation objectives met |
 | 2      | ✅ Complete     | 95%       | Feature engineering and data processing complete, interaction data not included in feature set |
-| 3      | ✅ Complete     | 90%       | ETL infrastructure and churn logic framework complete, minor items carried forward |
-| 4      | 🔄 In Progress  | 60%       | AWS infrastructure deployed, model framework complete, training pipeline underway |
-| 5      | ⏳ Not Started  | 0%        |                                |
-| 6      | ⏳ Not Started  | 0%        |                                |
+| 3      | ✅ Complete     | 100%       | ETL infrastructure and churn logic framework complete, minor items carried forward |
+| 4      | ✅ Complete.    | 100%       | AWS infrastructure deployed, model framework complete, training pipeline underway |
+| 5      | 🔄 In Progress  | 85%        |                                |
+| 6      | 🔄 In Progress  | 50%        |                                |
 
 ✅🔄⏳
 
@@ -112,7 +112,7 @@
 
 ---
 
-## 🔄 Sprint 3: ETL Infrastructure & Production Pipeline *(Sep 1-Sep 14)*
+## ✅ Sprint 3: ETL Infrastructure & Production Pipeline *(Sep 1-Sep 14)*
 
 ### Sprint Goals
 - [x] Advanced feature engineering (completed early in Sprint 2)
@@ -150,7 +150,7 @@
 
 ---
 
-## 🔄 Sprint 4: Model Development *(Sep 15–Sep 28)*
+## ✅ Sprint 4: Model Development *(Sep 15–Sep 28)*
 
 ### Sprint Goals
 - [x] AWS infrastructure deployment and CI/CD setup
@@ -199,7 +199,7 @@
 
 ---
 
-## ⏳ Sprint 5: Model Enhancement – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
+## 🔄 Sprint 5: Model Enhancement – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
 
 ### Sprint Goals
 - [~] Advanced model optimization and tuning
@@ -242,7 +242,7 @@
 
 ---
 
-## ⏳ Sprint 6: Production Deployment – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
+## 🔄 Sprint 6: Production Deployment – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
 
 ### Sprint Goals
 - [~] Final model validation
