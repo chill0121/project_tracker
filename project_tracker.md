@@ -203,7 +203,7 @@
 
 ### Sprint Goals
 - [~] Advanced model optimization and tuning
-    - [x] Bayesian hyperparameter optimization (Optuna or similar)
+    - [x] CV hyperparameter optimization
     - [x] Feature engineering iteration based on model insights
     - [x] Class imbalance handling (SMOTE, class weights, threshold tuning)
     - [~] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
@@ -214,20 +214,20 @@
     - [x] SHAP value storage in feature store with model lineage
     - [~] Business-friendly explanation templates
 - [~] Customer segmentation analysis
-    - [X] UMAP/PCA dimensionality reduction for behavioral features
-    - [X] HDBSCAN clustering with automatic parameter selection
-    - [X] Segment characterization and churn risk profiling
-    - [~] Cluster assignment storage and versioning
+    - [x] UMAP/PCA dimensionality reduction for behavioral features
+    - [x] HDBSCAN clustering with automatic parameter selection
+    - [x] Segment characterization and churn risk profiling
+    - [x] Cluster assignment storage and versioning
     - [~] Business insights and segment-specific model performance
 - [~] Model validation and business impact assessment
     - [~] Performance analysis across customer segments
     - [ ] Cost-benefit analysis of churn intervention
-    - [~] Model stability testing across different time periods
+    - [x] Model stability testing across different time periods
     - [ ] A/B testing framework design for model deployment
 - [~] Documentation and knowledge transfer preparation
     - [~] Model methodology documentation
     - [~] SHAP interpretation guide for business stakeholders
-    - [ ] Customer segmentation insights summary
+    - [~] Customer segmentation insights summary
 
 ### Weekly Check-In *(Oct 3 & Oct 9)*
 - **Progress Summary:**  
@@ -248,7 +248,7 @@
 - [~] Final model validation
 - [~] Define pipeline component latencies and complete pipeline automation setup
 - [~] Revisit all documentation and final polish
-- [ ] Pipeline walkthrough/demo and knowledge transfer
+- [~] Pipeline walkthrough/demo and knowledge transfer
 
 ### Weekly Check-In *(Oct 17 & Oct 24)*
 - **Progress Summary:**  
