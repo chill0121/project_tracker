@@ -202,17 +202,17 @@
 ## 🔄 Sprint 5: Model Enhancement – Pipeline Tuning, SHAP explainability, and Customer Segmenation *(Sep 29–Oct 12)*
 
 ### Sprint Goals
-- [~] Advanced model optimization and tuning
+- [x] Advanced model optimization and tuning
     - [x] CV hyperparameter optimization
     - [x] Feature engineering iteration based on model insights
     - [x] Class imbalance handling (SMOTE, class weights, threshold tuning)
     - [~] Model ensemble evaluation (XGBoost + XGBoost(Cluster_Features) + Logistic Regression)
-- [~] SHAP explainability framework implementation
+- [x] SHAP explainability framework implementation
     - [x] Global feature importance analysis across all customers
     - [x] Individual customer prediction explanations
-    - [~] Feature interaction discovery and visualization
+    - [x] Feature interaction discovery and visualization
     - [x] SHAP value storage in feature store with model lineage
-    - [~] Business-friendly explanation templates
+    - [x] Business-friendly explanation templates
 - [~] Customer segmentation analysis
     - [x] UMAP/PCA dimensionality reduction for behavioral features
     - [x] HDBSCAN clustering with automatic parameter selection
@@ -221,9 +221,9 @@
     - [~] Business insights and segment-specific model performance
 - [~] Model validation and business impact assessment
     - [~] Performance analysis across customer segments
-    - [ ] Cost-benefit analysis of churn intervention
+    - [~] Cost-benefit analysis of churn intervention
     - [x] Model stability testing across different time periods
-    - [ ] A/B testing framework design for model deployment
+    - [x] A/B testing framework design for model deployment
 - [~] Documentation and knowledge transfer preparation
     - [~] Model methodology documentation
     - [~] SHAP interpretation guide for business stakeholders
@@ -245,9 +245,9 @@
 ## 🔄 Sprint 6: Production Deployment – Final Validation, Pipeline Automation, Demo & Handoff  *(Oct 13–Oct 26)*
 
 ### Sprint Goals
-- [~] Final model validation
+- [x] Final model validation
 - [~] Define pipeline component latencies and complete pipeline automation setup
-- [~] Revisit all documentation and final polish
+- [x] Revisit all documentation and final polish
 - [~] Pipeline walkthrough/demo and knowledge transfer
 
 ### Weekly Check-In *(Oct 17 & Oct 24)*
