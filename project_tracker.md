@@ -246,9 +246,9 @@
 
 ### Sprint Goals
 - [x] Final model validation
-- [~] Define pipeline component latencies and complete pipeline automation setup
+- [x] Define pipeline component latencies and complete pipeline automation setup
 - [x] Revisit all documentation and final polish
-- [~] Pipeline walkthrough/demo and knowledge transfer
+- [x] Pipeline walkthrough/demo and knowledge transfer
 
 ### Weekly Check-In *(Oct 17 & Oct 24)*
 - **Progress Summary:**  
